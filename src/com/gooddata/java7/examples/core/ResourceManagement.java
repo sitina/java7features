@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2007-2012, GoodData(R) Corporation. All rights reserved.
  */
-package core;
+package com.gooddata.java7.examples.core;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
