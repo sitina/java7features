@@ -7,4 +7,6 @@ public class Literals {
 
     int one_million = 1_000_000;
 
+    int binary = 0b1001_1001;
+
 }

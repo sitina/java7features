@@ -10,8 +10,10 @@ import java.util.Map;
 
 public class Generics {
 
-    Map<String, List<String>> anagrams = new HashMap<>();
+    Map<String, List<Long>> anagrams = new HashMap<>();
 
-    List<String> list = new ArrayList<>();
+    List<String> originalInitialization = new ArrayList<String>();
+
+    List<String> newInitialization = new ArrayList<>();
 
 }
