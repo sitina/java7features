@@ -5,6 +5,7 @@ package com.gooddata.java7.examples.nio2;
 
 import java.net.URI;
 import java.nio.file.FileSystems;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -21,6 +22,8 @@ public class PathExample {
 
         // The following example creates /u/joe/logs/foo.log assuming your home directory is /u/joe, or C:\joe\logs\foo.log if you are on Windows.
         Path p4 = Paths.get(System.getProperty("user.home"), "logs", "foo.log");
+
+        Files.getFileStore(p1).getTotalSpace();
     }
 
 }
