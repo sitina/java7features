@@ -5,9 +5,12 @@ package com.gooddata.java7.examples.core;
 
 import java.io.FileNotFoundException;
 
+import org.junit.Test;
+
 public class Exceptions {
 
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         try {
             throwTest();
         } catch (FileNotFoundException | IllegalAccessException e) {
