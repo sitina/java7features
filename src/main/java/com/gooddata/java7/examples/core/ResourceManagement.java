@@ -10,13 +10,12 @@ public class ResourceManagement {
 
     public static void main(String[] args) throws Exception {
         String path = "src/com/gooddata/java7/examples/core/ResourceManagement.java";
-        System.out.println(readLineJava7(path));
+        System.out.println(readLine(path));
     }
 
-    public static String readLineJava7(String path) throws Exception {
-        try (
-                FileReader fr = new FileReader(path);
-                BufferedReader br = new BufferedReader(fr)) {
+    public static String readLine(String path) throws Exception {
+        // resources must implement AutoCloseable interface
+        try (FileReader fr = new FileReader(path); BufferedReader br = new BufferedReader(fr)) {
             return br.readLine();
         }
     }

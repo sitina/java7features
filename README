@@ -1,1 +1,22 @@
 This repo aims to list most interesting/important changes/features of Java 7.
+
+Lots of examples are also in Niklas Schlimm's github project https://github.com/nschlimm/playground/tree/master/java7-playground (http://niklasschlimm.blogspot.com/).
+
+Sources: 
+http://www.oracle.com/technetwork/java/javase/jdk7-relnotes-418459.html
+http://radar.oreilly.com/2011/09/java7-features.html
+http://jaxenter.com/java-7-the-top-8-features-37156.html
+http://stackoverflow.com/questions/1082555/best-java-7-features
+http://stackoverflow.com/questions/214289/what-new-features-in-java-7-do-you-find-most-useful
+http://stackoverflow.com/questions/213958/new-features-in-java-7
+http://java.dzone.com/articles/new-java-7-language-features
+http://sellmic.com/blog/2011/07/08/7-new-cool-features-in-java-7/
+http://openjdk.java.net/projects/jdk7/features/#fa537814
+http://openjdk.java.net/projects/nio/presentations/TS-5686.pdf
+http://openjdk.java.net/projects/jdk7/features/
+http://docs.oracle.com/javase/tutorial/essential/io/pathOps.html
+http://www.javacodegeeks.com/2012/01/java-7-nio-file-revolution.html
+https://github.com/nschlimm/playground/tree/master/java7-playground
+http://niklasschlimm.blogspot.com/
+http://www.javacodegeeks.com/2012/01/java-7-nio-file-revolution.html
+http://niklasschlimm.blogspot.com/2011/12/java-7-fork-and-join-and-jar-jam.html

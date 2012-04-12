@@ -5,16 +5,13 @@ package com.gooddata.java7.examples.core;
 
 import java.io.FileNotFoundException;
 
-import org.junit.Test;
-
 public class Exceptions {
 
-    @Test
-    public void test() {
+    public void multipleExceptionsExample() {
         try {
             throwTest();
         } catch (FileNotFoundException | IllegalAccessException e) {
-            // exc. handling
+            // multiple exc. handling
         }
     }
 

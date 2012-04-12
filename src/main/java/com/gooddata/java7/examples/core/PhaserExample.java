@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Phaser;
 
+// http://niklasschlimm.blogspot.com/2011/12/java-7-understanding-phaser.html
 public class PhaserExample {
 
     public static void main(String[] args) throws InterruptedException {
@@ -26,11 +27,9 @@ public class PhaserExample {
             };
 
             tasks.add(runnable);
-
         }
 
         new PhaserExample().runTasks(tasks);
-
     }
 
     void runTasks(List<Runnable> tasks) throws InterruptedException {
