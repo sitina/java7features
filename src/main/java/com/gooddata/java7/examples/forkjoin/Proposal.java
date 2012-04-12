@@ -26,6 +26,10 @@ public class Proposal {
         this.automotiveLiability = automotiveLiability;
     }
 
+    public String getVorname() {
+        return this.vorname;
+    }
+
     public boolean multipleCovers() {
         return ((isAutomotiveLiability() ? 1 : 0) + (isComprehensive() ? 1 : 0) + (isPartInsuranceCover() ? 1 : 0)) > 1;
     }

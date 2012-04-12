@@ -57,10 +57,12 @@ public class ForkJoinTaskExample extends RecursiveTask<List<Map<String, Double>>
 
     public static void main(String[] args) {
         // Calculate four proposals
-        ForkJoinTaskExample task = new ForkJoinTaskExample(Arrays.asList(new Proposal("Niklas", "Schlimm", "7909",
-                "AAL", true, true, true), new Proposal("Andreas", "Fritz", "0005", "432", true, true, true),
-                new Proposal("Christian", "Toennessen", "0583", "442", true, true, true), new Proposal("Frank",
-                        "Hinkel", "4026", "AAA", true, true, true)));
+        ForkJoinTaskExample task = new ForkJoinTaskExample(
+                Arrays.asList(
+                        new Proposal("Niklas", "Schlimm", "7909", "AAL", true, true, true),
+                        new Proposal("Andreas", "Fritz", "0005", "432", true, true, true),
+                        new Proposal("Christian", "Toennessen", "0583", "442", true, true, true),
+                        new Proposal("Frank", "Hinkel", "4026", "AAA", true, true, true)));
 
 
         ForkJoinPool pool = new ForkJoinPool();

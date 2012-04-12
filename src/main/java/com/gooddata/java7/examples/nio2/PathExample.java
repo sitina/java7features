@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 public class PathExample {
 
     @SuppressWarnings("unused")
-    public void test() throws Exception {
+    public void pathsExample() throws Exception {
         // You can easily create a Path object by using one of the following get methods from the Paths (note the plural) helper class:
         Path p1 = Paths.get("/tmp/foo");
         Path p2 = Paths.get(URI.create("file:///Users/joe/FileTest.java"));

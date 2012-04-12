@@ -24,17 +24,17 @@ public class PricingEngine {
         Map<String, Double> result = new HashMap<>();
         if (proposal.isComprehensive()) {
             complexRateCalculation();
-            result.put("Comprehensive Cover",
+            result.put(proposal.getVorname() + " Comprehensive Cover",
                     comprehensiveCoverBasePrice * hsnTsnFactors.get(proposal.getHsn().concat(proposal.getTsn())));
         }
         if (proposal.isPartInsuranceCover()) {
             complexRateCalculation();
-            result.put("Part Insurance Cover",
+            result.put(proposal.getVorname() + " Part Insurance Cover",
                     partInsuranceCoverBasePrice * hsnTsnFactors.get(proposal.getHsn().concat(proposal.getTsn())));
         }
         if (proposal.isAutomotiveLiability()) {
             complexRateCalculation();
-            result.put("Automotive Liability",
+            result.put(proposal.getVorname() + " Automotive Liability",
                     automotiveLiabilityBasePrice * hsnTsnFactors.get(proposal.getHsn().concat(proposal.getTsn())));
         }
         return result;
