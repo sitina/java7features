@@ -16,11 +16,14 @@ public class ResourceManagement {
         System.out.println(readLine(path));
     }
 
-    public static String readLine(String path) throws Exception {
+    public static String readLine(String path) {
         // resources must implement AutoCloseable interface
         try (FileReader fr = new ExtFileReader(path); BufferedReader br = new ExtBufferedReader(fr)) {
             return br.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+        return null;
     }
 
     public static class ExtFileReader extends FileReader {
@@ -47,6 +50,7 @@ public class ResourceManagement {
         public void close() throws IOException {
             super.close();
             System.out.println("BufferedReader close");
+            throw new IOException();
         }
 
     }
